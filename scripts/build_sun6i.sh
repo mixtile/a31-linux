@@ -77,8 +77,8 @@ copy_nand_mod()
     #if [ -x "./scripts/build_rootfs.sh" ]; then
         #./scripts/build_rootfs.sh e rootfs.cpio.gz >/dev/null
     #else
-    #    echo "No such file: build_rootfs.sh"
-    #    exit 1
+        #echo "No such file: build_rootfs.sh"
+        #exit 1
     #fi
 
     if [ ! -d "./skel/lib/modules/$KERNEL_VERSION" ]; then
