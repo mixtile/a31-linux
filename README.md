@@ -1,4 +1,4 @@
-LoftQ-linux-3.3
+loftq-linux
 ===============
 
 linux kernel for Mixtile LoftQ Project
