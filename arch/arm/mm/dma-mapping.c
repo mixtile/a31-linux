@@ -153,7 +153,7 @@ static struct arm_vmregion_head consistent_head = {
 };
 
 #ifdef CONFIG_HUGETLB_PAGE
-#error ARM Coherent DMA allocator does not (yet) support huge TLB
+#warning ARM Coherent DMA allocator does not (yet) support huge TLB
 #endif
 
 /*
