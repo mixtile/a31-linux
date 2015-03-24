@@ -78,7 +78,7 @@ static bool codec_phonein_left_en		= false;
 static bool codec_speakerout_lntor_en	= false;
 static bool codec_headphoneout_lntor_en = false;
 static bool codec_dacphoneout_reduced_en= false;
-static int codec_speaker_headset_earpiece_en= 0;
+static int codec_speaker_headset_earpiece_en= 2;
 
 struct clk *codec_apbclk,*codec_pll2clk,*codec_moduleclk;
 
