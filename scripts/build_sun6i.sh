@@ -129,10 +129,12 @@ build_kernel()
 	cp -vf arch/arm/boot/[zu]Image output/
 	cp .config output/
 
-	for file in $(find drivers sound crypto block fs security net -name "*.ko"); do
-		cp $file ${LICHEE_MOD_DIR}
-	done
-	cp -f Module.symvers ${LICHEE_MOD_DIR}
+	make ARCH=arm INSTALL_MOD_PATH=${LICHEE_KDIR}/output modules_install
+	
+#	for file in $(find drivers sound crypto block fs security net -name "*.ko"); do
+#		cp $file ${LICHEE_MOD_DIR}
+#	done
+#	cp -f Module.symvers ${LICHEE_MOD_DIR}
 
 	#copy bcm4330 firmware and nvram.txt
 #	cp drivers/net/wireless/bcm4330/firmware/bcm4330.bin ${LICHEE_MOD_DIR}
